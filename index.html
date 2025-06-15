@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gioco di Dadi</title>
+  <style>
+    .dado {
+      font-size: 100px;
+      transition: transform 0.3s;
+    }
+    .tirando {
+      animation: gira 0.3s linear infinite;
+    }
+    @keyframes gira {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Gioco di Dadi</h1>
+  <div id="dadi">
+    <div id="dado1" class="dado">🎲</div>
+    <div id="dado2" class="dado">🎲</div>
+  </div>
+  <button onclick="gioca()">Lancia i dadi</button>
+  <p id="risultato"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>
